@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVANTAR PEDIDO</title>
+    <style>
+
+    header{
+        background-color: #08968cfa;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        }
+    nav {
+        background: #ccc;
+        padding: 1px;
+        }
+    footer {
+        background-color: #08968cfa;
+        padding: 1px;
+        color: black;
+        }   
+    .menu {
+        background-color: gray;
+        padding: 5px 5px;
+        font: bold 14px verdana;
+        text-align: right;
+    }
+    .menu li {
+        list-style: none;
+        padding: 3px;
+        font: bold 14px verdana;
+        display: inline-block;
+    }
+    </style>
+            <header>
+                <h1>Pastelería Delicias</h1>
+                <img src="C:\Users\Saulr\FRONT END S02\PASTELERIA DELICIAS LOGO.jpg" alt="Logo Pasteleria Delicias" width="150px" height="150px">
+            </header>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li>Principal</li>
+            <li>Hacer Pedido</li>
+            <li>Pedidos recibidos</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <h1>Hola, favor de hacer hacer tu pedido</h1>
+
+    <form action="Pedido JS">
+        <h2>Proporcionar la siguiente información para levantar tu pedido</h2>
+
+        <label for="Nombre">Nombre de quien hace el pedido</label><br><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br><br>
+
+        <label for="tel1">No. de teléfono</label><br><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="Teléfono"><br><br> 
+
+        <p>¿Pastel de línea o personalizado?</p>
+        <input type="radio" id="linea" name="Lineaopersonalizado" value="linea">
+        <label for="linea">línea</label><br>
+        <input type="radio" id="personalizado" name="Lineaopersonalizado" value="personalizado">
+        <label for="personalizado">Personalizado</label><br>
+
+        <p>¿De que sabor es tu pastel?</p>
+
+        <label for="Pastel">Elije tú pastel</label>
+        <select id="Pastel" name="Pastel"><br>
+            <option value="opera">Opera</option>
+            <option value="firence">Firenze</option>
+            <option value="triplechocolate">Triple Chocolate</option>
+            <option value="Rompope">Rompope</option>
+            <option value="Rivoli">Rivoli</option>
+        </select><br>
+
+        <p>¿Quieres un complemento para tu pastel?</p>
+        <input type="checkbox" id="topping1" name="topping1" value="Chantilly">
+        <label for="topping1">Pastel con chantilly</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Crema">
+        <label for="topping2">Pastel con crema</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Fruta">
+        <label for="topping3">Pastel con fruta</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Semillas">
+        <label for="topping4">Pastel con semillas</label><br>
+        <input type="checkbox" id="topping5" name="topping5" value="Adorno">
+        <label for="topping5">Pastel con felicitaciones o adorno</label><br>
+        <br>
+        <label for="Texto2">Indica las felicitaciones para tu pastel</label>
+        <input type="Texto2" id="Nombre" name="Nombre" placeholder="Felicitaciones">
+    <br><br>
+<input type="reset">
+<input type="submit">
+<br><br>
+
+<footer class="menu">Tel: 55-1111-1111, email: contacto@pdelicias.com</footer>
+<br>
+</body>
+
+</html>
